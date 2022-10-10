@@ -30,7 +30,6 @@ type Client struct {
 func ListenAndServe(c Client) error {
 	var err error
 START:
-	c = Client{}
 	serverConn, err := net.DialTimeout("tcp4", c.ServerAddress, 10*time.Second)
 	if err != nil {
 		log.Println(err)
