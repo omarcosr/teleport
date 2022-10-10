@@ -22,7 +22,6 @@ type Client struct {
 
 	serverConn   *net.Conn
 	yamuxSession *yamux.Session
-	localAddress string
 	closedConn   bool
 }
 
@@ -129,7 +128,7 @@ func (c *Client) tcpForwardToTarget(yamuxClientConn *net.Conn) {
 }
 func (c *Client) createTargetConn() (*net.Conn, error) {
 	//log.Println("createTargetConn")
-	targetConn, err := net.DialTimeout("tcp4", c.localAddress, 2*time.Second)
+	targetConn, err := net.DialTimeout("tcp4", c.LocalAddress, 2*time.Second)
 	//targetConn, err := net.Dial("tcp4", c.localAddress)
 	if err != nil {
 		if targetConn != nil {
