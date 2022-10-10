@@ -1,0 +1,4 @@
+github.com/hashicorp/yamux v0.1.1 h1:yrQxtgseBDrq9Y652vSRDvsKCJKOUD+GzTS4Y0Y8pvE=
+github.com/hashicorp/yamux v0.1.1/go.mod h1:CtWFDAQgb7dxtzFs4tWbplKIe2jSi3+5vKbgIO0SLnQ=
+github.com/omarcosr/teleport v0.0.0-20221010091343-0a83fafee529 h1:EXVLp/m1JpM6jyip1rAVAWUyesNQADHPKBkQvb2vhcw=
+github.com/omarcosr/teleport v0.0.0-20221010091343-0a83fafee529/go.mod h1:6D+IAwng5IuU09wq5ofTk1Oe4+Ugx/zHCV4o1HTX98U=
